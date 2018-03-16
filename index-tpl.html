@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <!-- <meta name="description" content="<%= htmlWebpackPlugin.options.title %>"> -->
+  <% if (webpackConfig.htmlElements.headTags) { %>
+    <%= webpackConfig.htmlElements.headTags %>
+      <% } %>
+</head>
+<script src="http://192.168.11.238:6020/indoorMap/js/three.min.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/Detector.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/OrbitControls.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/IndoorMap.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/Projector.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/stats.min.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/IndoorMap2d.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/IndoorMap3d.js"></script>
+<script src="http://192.168.11.238:6020/indoorMap/js/Theme.js"></script>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>

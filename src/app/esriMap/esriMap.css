@@ -1,0 +1,27 @@
+#esriMap {
+    width: 100%;
+    height: 800px
+}
+
+.myPopup {
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.popup-title {
+    color: #1640c8;
+    font-weight: 600;
+    height: 25px;
+    margin-bottom: -15px;
+    border-bottom: 1px solid;
+}
+
+.myPopup .leaflet-popup-content {
+    line-height: 1.6;
+}
+
+.myPopup .leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    border-radius: 2px;
+}

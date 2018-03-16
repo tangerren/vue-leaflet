@@ -1,0 +1,78 @@
+{
+    "env": {
+        "browser": true,
+        "amd": true,
+        "jquery": true,
+        "node": true
+    },
+    "globals": {
+        "dojo": true,
+        "angular": true,
+        "couchPotato": true,
+        "ActiveXObject": true,
+        "Slider": true,
+        "Terraformer": true,
+        "horsey": true,
+        "echarts": true,
+        "L": true,
+        "THREE": true
+    },
+    "plugins": [
+        "html"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-mixed-spaces-and-tabs": "off",
+        "no-console": "off",
+        "complexity": "error",
+        "curly": "error",
+        "default-case": "error",
+        // "dot-notation": [
+        //     "error",
+        //     {
+        //         "allowKeywords": false
+        //     }
+        // ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "no-eq-null": "error",
+        "no-floating-decimal": "error",
+        "no-implicit-globals": "error",
+        "no-invalid-this": "error",
+        "no-lone-blocks": "error",
+        "no-multi-str": "error",
+        "no-unused-expressions": "warn",
+        "wrap-iife": [
+            "error",
+            "any"
+        ],
+        "no-catch-shadow": "error",
+        "no-unused-vars": ["off", {
+            "vars": "local",
+            "args": "all"
+        }],
+        "no-use-before-define": ["error", {
+            "functions": false,
+            "classes": true
+        }],
+        "no-redeclare": "off",
+        "brace-style": "error"
+    }
+}

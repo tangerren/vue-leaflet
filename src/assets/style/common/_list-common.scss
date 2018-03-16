@@ -1,0 +1,40 @@
+@mixin truncate-line() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin line-base($secondary-font-size) {
+  .line {
+    @include truncate-line();
+    
+    display: block;
+    box-sizing: border-box;
+    &:nth-child(n+2) {
+      font-size: $secondary-font-size;
+    }
+  }
+}
+
+@mixin normalize-text() {
+  & > * {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: inherit;
+  }
+}
+
+@mixin line-wrapper-base() {
+  @include normalize-text();
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &:empty {
+    display: none;
+  }
+}
